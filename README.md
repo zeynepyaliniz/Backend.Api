@@ -29,4 +29,19 @@ Auth Role Based JWT implementation
     "Secret": "this is my custom Secret key for authentication"
   }
 ```
+## For the CORS
+
+```cs
+services.AddCors(options =>
+            {
+                options.AddPolicy("default",
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:3000",
+                                                          "http://www.contoso.com")
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod();
+                                  });
+            });
+```
 # JWT middleware in case but not is not active!
