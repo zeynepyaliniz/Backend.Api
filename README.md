@@ -44,4 +44,32 @@ services.AddCors(options =>
                                   });
             });
 ```
+## To Generate Token:
+```cs
+private string generateJwtToken(User user)
+        {
+            // generate token that is valid for 7 days          
+           
+            Claim[] getClaims()
+            {
+                List<Claim> claims = new List<Claim>();
+                claims.Add(new Claim(ClaimTypes.Name, user.Id.ToString()));
+                foreach (var item in user.Roles)
+                {
+                    claims.Add(new Claim(ClaimTypes.Role, item));
+                }
+                return claims.ToArray();
+            }
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(getClaims()),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
+```
 # JWT middleware in case but not is not active!
