@@ -23,5 +23,10 @@ Auth Role Based JWT implementation
                 };
             });
 ```
-
+## appsetting.json
+```cs
+"AppSettings": {
+    "Secret": "this is my custom Secret key for authentication"
+  }
+```
 # JWT middleware in case but not is not active!
