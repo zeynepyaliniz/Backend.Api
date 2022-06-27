@@ -1,6 +1,5 @@
 ﻿using Backend.Api.Helper;
 using Backend.Api.Models;
-using Backend.Data.Access.Layer.Repositories;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -19,7 +18,6 @@ namespace Backend.Api.Services
             new User { Id = 1, FirstName = "Test", LastName = "User", Username = "test", Password = "test", Roles = new List<string>(){ "Admin"} },
             new User { Id = 2, FirstName = "Test", LastName = "User", Username = "user", Password = "user", Roles = new List<string>(){ "User"} }
         };
-        private readonly IUserRepository _userRepository;
 
 
         private readonly AppSettings _appSettings;

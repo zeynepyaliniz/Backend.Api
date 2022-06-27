@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Api", "Backend.Api.csproj", "{657BAE55-80C0-4369-9876-E41CD96BE92E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Data.Access.Layer", "..\Backend.Data.Access.Layer\Backend.Data.Access.Layer.csproj", "{A035B759-43FF-4E37-A892-14AB8CECF58D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backend.Api", "Backend.Api.csproj", "{657BAE55-80C0-4369-9876-E41CD96BE92E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{657BAE55-80C0-4369-9876-E41CD96BE92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{657BAE55-80C0-4369-9876-E41CD96BE92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{657BAE55-80C0-4369-9876-E41CD96BE92E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A035B759-43FF-4E37-A892-14AB8CECF58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A035B759-43FF-4E37-A892-14AB8CECF58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A035B759-43FF-4E37-A892-14AB8CECF58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A035B759-43FF-4E37-A892-14AB8CECF58D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
