@@ -1,8 +1,21 @@
-﻿[[_TOC_]]
-# This is Identity Server Implementation
-### NugetPackage:
-#### IdentityServer4 
-### Startup.cs
+﻿- [This is Identity Server Implementation](#this-is-identity-server-implementation)
+- [NugetPackage:](#nugetpackage-)
+- [IdentityServer4](#identityserver4)
+    + [Startup.cs](#startupcs)
+- [ApiResources](#apiresources)
+- [ApiScopes](#apiscopes)
+- [Clients](#clients)
+- [IdentityResources](#identityresources)
+- [TestUsers](#testusers)
+- [DeveloperSigningCredentials](#developersigningcredentials)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+### This is Identity Server Implementation
+### NugetPackage: 
+``` cs dotnet install IdentityServer4 ```
+### IdentityServer4 
+##### Startup.cs
 ```cs
 // in ConfigureServices:
  services.AddIdentityServer()
