@@ -16,3 +16,10 @@
 app.UseIdentityServer();
 ```
 
+### ApiResources
+### ApiScopes
+### Clients
+### IdentityResources
+### TestUsers
+### DeveloperSigningCredentials
+
