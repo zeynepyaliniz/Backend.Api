@@ -1,4 +1,5 @@
-﻿# This is Identity Server Implementation
+﻿[[_TOC_]]
+# This is Identity Server Implementation
 ### NugetPackage:
 #### IdentityServer4 
 ### Startup.cs
