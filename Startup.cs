@@ -45,7 +45,6 @@ namespace Backend.Api
             //});
 
             services.AddControllers();
-            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddScoped<IUserService, UserService>();
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
